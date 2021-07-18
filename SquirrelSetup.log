@@ -1,0 +1,77 @@
+﻿2021-05-26 00:02:45> Program: Starting Squirrel Updater: --install . --exeName=TeamsSetupx64_s_8D91FBFD6D5EF22-7-0_.exe --bootstrapperMode
+2021-05-26 00:02:49> FileDownloader: Downloading url: https://teams.microsoft.com/desktopclient/installer/windows/x64
+2021-05-26 00:02:50> Program: setup.json does not exist
+2021-05-26 00:02:51> Program: Starting install, writing to C:\Users\pc\AppData\Local\SquirrelTemp
+2021-05-26 00:02:51> Program: Running contextual installation logic
+2021-05-26 00:02:51> Program: ContextualInstaller returned: True. Using filename: TeamsSetupx64_s_8D91FBFD6D5EF22-7-0_.exe
+2021-05-26 00:02:51> UpdateManager: using rootAppDirectory: C:\Users\pc\AppData\Local\Microsoft\Teams
+2021-05-26 00:02:51> Program: About to install to: C:\Users\pc\AppData\Local\Microsoft\Teams
+2021-05-26 00:02:51> Program: Setup.json exist, copying over
+2021-05-26 00:02:51> RegistryService: RegKeyExists: HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run does not have TeamsMachineInstaller
+2021-05-26 00:02:51> Program: CheckMsiAndTryAddInstallSource: Not MSI, no need to add HKEY_CURRENT_USER\Software\Microsoft\Office\Teams\InstallSource
+2021-05-26 00:02:51> CheckForUpdateImpl: Couldn't write out staging user ID, this user probably shouldn't get beta anything: System.IO.DirectoryNotFoundException: 'C:\Users\pc\AppData\Local\Microsoft\Teams\packages\.betaId' yolunun bir parçası bulunamadı.
+   konum: System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   konum: System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   konum: System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   konum: System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   konum: System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   konum: System.IO.File.InternalWriteAllText(String path, String contents, Encoding encoding, Boolean checkHost)
+   konum: System.IO.File.WriteAllText(String path, String contents, Encoding encoding)
+   konum: Squirrel.UpdateManager.CheckForUpdateImpl.getOrCreateStagedUserId()
+2021-05-26 00:02:51> CheckForUpdateImpl: Failed to load local releases, starting from scratch: System.IO.DirectoryNotFoundException: 'C:\Users\pc\AppData\Local\Microsoft\Teams\packages\RELEASES' yolunun bir parçası bulunamadı.
+   konum: System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   konum: System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   konum: System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   konum: Squirrel.Utility.LoadLocalReleases(String localReleaseFile)
+   konum: Squirrel.UpdateManager.CheckForUpdateImpl.<CheckForUpdate>d__3.MoveNext()
+2021-05-26 00:02:51> CheckForUpdateImpl: Downloading RELEASES file from https://statics.teams.cdn.office.net/production-windows-x64/1.4.00.11161
+2021-05-26 00:02:51> FileDownloader: Downloading url: https://statics.teams.cdn.office.net/production-windows-x64/1.4.00.11161/RELEASES
+2021-05-26 00:02:52> CheckForUpdateImpl: First run or local directory is corrupt, starting from scratch
+2021-05-26 00:02:52> FileDownloader: Downloading file: https://statics.teams.cdn.office.net/production-windows-x64/1.4.00.11161/Teams-1.4.00.11161-full.nupkg
+2021-05-26 00:04:04> ApplyReleasesImpl: No delta packages found. Applying current release package.
+2021-05-26 00:04:04> ApplyReleasesImpl: getting squirrel aware apps failed with exception 'C:\Users\pc\AppData\Local\Microsoft\Teams\current' yolunun bir parçası bulunamadı.
+2021-05-26 00:04:04> ApplyReleasesImpl: Writing files to app directory: C:\Users\pc\AppData\Local\Microsoft\Teams\current
+2021-05-26 00:04:26> ApplyReleasesImpl: Squirrel Enabled Apps: [C:\Users\pc\AppData\Local\Microsoft\Teams\current\Teams.exe]
+2021-05-26 00:04:41> ApplyReleasesImpl: About to RemoveOldShorcuts for Teams.exe, rootAppDir C:\Users\pc\AppData\Local\Microsoft\Teams
+2021-05-26 00:04:42> RegistryService: RegKeyExists: HKEY_CURRENT_USER\Software\Policies\Microsoft\Cloud\Office\16.0\Teams does not exist
+2021-05-26 00:04:42> ApplyReleasesImpl: Registry value Software\Policies\Microsoft\Cloud\Office\16.0\Teams\PreventFirstLaunchAfterInstall does not exist
+2021-05-26 00:04:42> RegistryService: RegKeyExists: HKEY_CURRENT_USER\Software\Policies\Microsoft\Office\16.0\Teams does not exist
+2021-05-26 00:04:42> ApplyReleasesImpl: Registry value Software\Policies\Microsoft\Office\16.0\Teams\PreventFirstLaunchAfterInstall does not exist
+2021-05-26 00:04:42> RegistryService: RegKeyExists: HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Teams does not exist
+2021-05-26 00:04:42> ApplyReleasesImpl: Registry value Software\Microsoft\Office\16.0\Teams\PreventFirstLaunchAfterInstall does not exist
+2021-05-26 00:04:42> ApplyReleasesImpl: Registry flags are not set: proceed with default value NotConfigured
+2021-05-26 00:04:42> ApplyReleasesImpl: Starting fixPinnedExecutables
+2021-05-26 00:04:42> ApplyReleasesImpl: Examining Pin: Google Chrome.lnk
+2021-05-26 00:04:42> ApplyReleasesImpl: Examining Pin: Internet Explorer.lnk
+2021-05-26 00:04:42> ApplyReleasesImpl: Examining Pin: Windows Explorer.lnk
+2021-05-26 00:04:42> ApplyReleasesImpl: Examining Pin: Windows Media Player.lnk
+2021-05-26 00:04:42> ApplyReleasesImpl: Examining Pin: Yandex.lnk
+2021-05-26 00:04:42> ApplyReleasesImpl: Fixing up tray icons
+2021-05-26 00:04:42> ApplyReleasesImpl: Couldn't rewrite shim RegKey, most likely no apps are shimmed: System.NullReferenceException: Nesne başvurusu bir nesnenin örneğine ayarlanmadı.
+   konum: Squirrel.UpdateManager.ApplyReleasesImpl.<unshimOurselves>b__24_0(RegistryView view)
+2021-05-26 00:04:42> ApplyReleasesImpl: Couldn't rewrite shim RegKey, most likely no apps are shimmed: System.NullReferenceException: Nesne başvurusu bir nesnenin örneğine ayarlanmadı.
+   konum: Squirrel.UpdateManager.ApplyReleasesImpl.<unshimOurselves>b__24_0(RegistryView view)
+2021-05-26 00:04:42> MeetingAddinInstaller: System.ArgumentException: Alt anahtar olmadığından alt anahtar ağacı silinemez.
+   konum: System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   konum: Microsoft.Win32.RegistryKey.DeleteSubKeyTree(String subkey, Boolean throwOnMissingSubKey)
+   konum: Microsoft.Win32.RegistryKey.DeleteSubKeyTree(String subkey)
+   konum: Squirrel.MeetingAddinInstaller.<InstallMeetingAddinAsync>d__15.MoveNext()
+2021-05-26 00:04:42> MeetingAddinInstaller: StagedAppDirectory does not exist. Using Current
+2021-05-26 00:04:42> MeetingAddinInstaller: There is no version.txt. Falling back to getting version from folder name
+2021-05-26 00:04:42> MeetingAddinInstaller: Version: 1.0.21063.3; addinPackageDirectory: 1.0.21063.3
+2021-05-26 00:04:42> MeetingAddinInstaller: .dead exists: False
+2021-05-26 00:04:42> MeetingAddinInstaller: path to .dead: C:\Users\pc\AppData\Local\Microsoft\TeamsMeetingAddin\1.0.21063.3\.dead
+2021-05-26 00:04:42> MeetingAddinInstaller: before cleanup unused versions
+2021-05-26 00:04:43> MeetingAddinInstaller: Addin directory exists. Copy was successful
+2021-05-26 00:04:45> MeetingAddinInstaller: Version 1.0.21063.3 of the meeting add-in is now installed
+2021-05-26 00:04:45> PresenceAddinInstaller: Installing Teams Presence addin for Outlook...
+2021-05-26 00:04:45> PresenceAddinInstaller: Copying C:\Users\pc\AppData\Local\Microsoft\Teams\current\resources\assets\tlb\Uc.tlb to C:\Users\pc\AppData\Local\Microsoft\TeamsPresenceAddin
+2021-05-26 00:04:45> PresenceAddinInstaller: Copying C:\Users\pc\AppData\Local\Microsoft\Teams\current\resources\assets\tlb\Uc.win32.tlb to C:\Users\pc\AppData\Local\Microsoft\TeamsPresenceAddin
+2021-05-26 00:04:45> PresenceAddinInstaller: check if UC TypeLib points to current\resources\assets\tlb\Uc.tlb
+2021-05-26 00:04:45> PresenceAddinInstaller: Registering UC Typelib WIN32 under HKCU...
+2021-05-26 00:04:46> PresenceAddinInstaller: UC Typelib WIN32 successfully registered to C:\Users\pc\AppData\Local\Microsoft\TeamsPresenceAddin\Uc.win32.tlb under HKCU!
+2021-05-26 00:04:46> PresenceAddinInstaller: Registering UC Typelib WIN64 under HKCU...
+2021-05-26 00:04:46> PresenceAddinInstaller: UC Typelib WIN64 successfully registered to C:\Users\pc\AppData\Local\Microsoft\TeamsPresenceAddin\Uc.tlb under HKCU!
+2021-05-26 00:04:46> ApplyReleasesImpl: cleanDeadVersions: for original version of  and current version of 1.4.00.11161
+2021-05-26 00:04:46> ApplyReleasesImpl: cleanDeadVersions: exclude current folder stage
+2021-05-26 00:04:49> RegistryService: TryDeleteRegKey: HKEY_CURRENT_USER\Software\Microsoft\Office\Teams not found
